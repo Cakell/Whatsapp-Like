@@ -34,7 +34,6 @@ In order to use the Whatsapp service, the client can use the following commands:
 
 
 # FILES
-
 whatsappio.h -- header file for whatsapp.cpp
 
 whatsapp.cpp -- handles I/O of the server & the client
@@ -43,4 +42,4 @@ whatsappServer.cpp -- implementation of the server side of communication protoco
 
 whatsappClient.cpp -- implementation of the client side of communication protocol
 
-Makefile -- a Makefile [the suggested file] that compiles the executables
+Makefile -- a Makefile that compiles the executables

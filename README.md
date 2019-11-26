@@ -10,6 +10,7 @@ The command line for running the client is:     whatsappClient <client_name> <se
                                                 (e.g.  whatsappClient Daniel 127.0.0.1 8875)
                                                 
 In order to use the Whatsapp service, the client can use the following commands:
+
     1.  create_group <group_name> <list_of_client_names>
         (e.g. create_group family Dad,Mom,Avi,Yael)
         Description: Sends the server a request to create a new group named <group_name> with <list_of_client_names> as group members.
@@ -32,7 +33,8 @@ In order to use the Whatsapp service, the client can use the following commands:
         Description: Unregisters the client from the server and removes it from all groups.
 
 
-FILES:
+# FILES
+
 whatsappio.h -- header file for whatsapp.cpp
 whatsapp.cpp -- handles I/O of the server & the client
 whatsappServer.cpp -- implementation of the server side of communication protocol

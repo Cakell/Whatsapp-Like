@@ -33,7 +33,7 @@ In order to use the Whatsapp service, the client can use the following commands:
         Description: Unregisters the client from the server and removes it from all groups.
 
 
-# FILES
+# Files
 whatsappio.h -- header file for whatsapp.cpp
 
 whatsapp.cpp -- handles I/O of the server & the client
@@ -43,3 +43,14 @@ whatsappServer.cpp -- implementation of the server side of communication protoco
 whatsappClient.cpp -- implementation of the client side of communication protocol
 
 Makefile -- a Makefile that compiles the executables
+
+# Remarks
+The main challenge in this exercise was to create the 'writeData' & 'readData' functions,
+which handles the data transfer between the sever and the client, while making sure the
+data is transfered entirely, and without additional "garbage".
+What made these functions quite hard to code was adding the length of the transfered message
+to the beginning of the written message, and parsing it correctly with the 'readData' function.
+
+Other than that, it took quite a lot of time to make sure that every invalid input - whether it
+should be handeled in the client side or in the server side - is taken care correctly, and the
+relevant Error-message is indeed printed.
